@@ -1,5 +1,6 @@
 package com.clubdeportivo.models;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
@@ -37,12 +38,24 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_usuario")
     private Long id;
-    
+
     @Column(name = "email", nullable = false, length = 200, unique = true)
     private String email;
 
     @Column(name = "password", nullable = false, length = 100)
     private String password;
+
+    @Column(name = "nombre", nullable = false, length = 35)
+    private String nombre;
+
+    @Column(name = "apellido", nullable = false, length = 35)
+    private String apellido;
+
+    @Column(name = "telefono", nullable = false,  length = 20)
+    private String telefono;
+
+    @Column(name = "fech_nacimiento",nullable = false)
+    private LocalDate fechNacimiento;
 
     @Column(name = "is_active")
     @Builder.Default
@@ -61,4 +74,10 @@ public class Usuario {
             , inverseJoinColumns = @JoinColumn(name = "roles_id", referencedColumnName = "id_rol"))
     @Builder.Default
     private Set<Rol> roles = new HashSet<>();
+
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinTable(name = "usuarios_clubes", joinColumns = @JoinColumn(name = "usuario_id", referencedColumnName = "id_usuario")
+             , inverseJoinColumns = @JoinColumn(name = "clubes_id", referencedColumnName = "id_club"))
+    @Builder.Default
+    private Set<Club> clubes = new HashSet<>();
 }

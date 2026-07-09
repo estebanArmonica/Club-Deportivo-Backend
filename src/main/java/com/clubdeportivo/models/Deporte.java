@@ -2,10 +2,10 @@ package com.clubdeportivo.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -14,16 +14,23 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Entity
-@Table(name = "rol")
+@Table(name = "deporte")
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Rol {
+public class Deporte {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_rol")
+    @Column(name = "id_deporte")
     private Long id;
 
-    @Column(name = "tipo_rol", nullable = false, length = 50, unique = true)
-    private String tipoRol;
+    @Column(name = "nombre", length = 50, nullable = false)
+    private String nombre;
+
+    @Column(name = "descripcion", length = 100, nullable = false)
+    private String descripcion;
+
+    @Column(name = "activo", nullable = false)
+    @Builder.Default
+    private Boolean activo = true;
 }
