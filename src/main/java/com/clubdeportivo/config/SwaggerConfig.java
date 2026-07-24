@@ -18,7 +18,7 @@ import org.springframework.http.HttpHeaders;
         version = "1.0.0",
         description = "Official API of Club Deportivo web endpoints",
         contact = @Contact(
-            name = "Esteban Hernán Lobos Canales",
+            name = "Esteban Hérnan Lobos Canales",
             email = "esteban.hernan.lobos@gmail.com"
         )
     ),

@@ -34,3 +34,7 @@ build/
 
 ### Script SQL ###
 script.sql
+
+### .ENV ###
+.env 
+.env.*
