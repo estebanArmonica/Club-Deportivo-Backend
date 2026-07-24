@@ -225,7 +225,9 @@ public interface IClubRepository extends JpaRepository<Club, Long> {
     /**
      * Verificar si un club tiene usuarios asociados
      */
-    @Query("SELECT CASE WHEN COUNT(u) > 0 THEN true ELSE false END " +
-            "FROM UsuarioClub u WHERE u.club.id = :clubId")
+    @Query(value = "SELECT CASE WHEN COUNT(*) > 0 THEN true ELSE false END " +
+            "FROM usuarios_clubes uc " +
+            "WHERE uc.clubes_id = :clubId",
+            nativeQuery = true)
     Boolean hasUsuariosAsociados(@Param("clubId") Long clubId);
 }

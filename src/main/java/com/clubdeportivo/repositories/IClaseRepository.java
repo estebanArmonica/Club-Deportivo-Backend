@@ -364,10 +364,11 @@ public interface IClaseRepository extends JpaRepository<Clase, Long> {
     /**
      * Contar clases por día de la semana
      */
-    @Query("SELECT EXTRACT(DOW FROM c.fechClase) AS diaSemana, COUNT(c) " +
-            "FROM Clase c " +
-            "GROUP BY diaSemana " +
-            "ORDER BY diaSemana")
+    @Query(value = "SELECT EXTRACT(DOW FROM fech_clase) AS dia_semana, COUNT(*) AS total " +
+            "FROM clase " +
+            "GROUP BY dia_semana " +
+            "ORDER BY dia_semana",
+            nativeQuery = true)
     List<Object[]> countClasesByDiaSemana();
 
     // ============================================================

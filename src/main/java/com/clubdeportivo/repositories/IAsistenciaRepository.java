@@ -184,34 +184,35 @@ public interface IAsistenciaRepository extends JpaRepository<Asistencia, Long> {
     // ============================================================
 
     /**
-     * Buscar asistencias por ID de alumno (a través de pago -> inscripcion -> alumno)
+     * Buscar asistencias por ID de alumno usando SQL nativo
      */
-    @Query("SELECT a FROM Asistencia a " +
-            "WHERE a.pago.id IN (" +
-            "    SELECT p.id FROM Pago p " +
-            "    WHERE p.inscripcion.alumno.id = :alumnoId" +
-            ")")
+    @Query(value = "SELECT a.* FROM asistencia a " +
+            "INNER JOIN pago p ON a.id_pago = p.id_pago " +
+            "INNER JOIN inscripcion i ON p.id_inscripcion = i.id_inscripcion " +
+            "WHERE i.id_alumno = :alumnoId",
+            nativeQuery = true)
     List<Asistencia> findByAlumnoId(@Param("alumnoId") Long alumnoId);
 
     /**
-     * Buscar asistencias por ID de alumno y asistio (a través de pago -> inscripcion -> alumno)
+     * Buscar asistencias por ID de alumno y asistio usando SQL nativo
      */
-    @Query("SELECT a FROM Asistencia a " +
-            "WHERE a.asistio = :asistio AND a.pago.id IN (" +
-            "    SELECT p.id FROM Pago p " +
-            "    WHERE p.inscripcion.alumno.id = :alumnoId" +
-            ")")
+    @Query(value = "SELECT a.* FROM asistencia a " +
+            "INNER JOIN pago p ON a.id_pago = p.id_pago " +
+            "INNER JOIN inscripcion i ON p.id_inscripcion = i.id_inscripcion " +
+            "WHERE i.id_alumno = :alumnoId AND a.asistio = :asistio",
+            nativeQuery = true)
     List<Asistencia> findByAlumnoIdAndAsistio(@Param("alumnoId") Long alumnoId,
                                               @Param("asistio") Boolean asistio);
 
     /**
-     * Buscar asistencias por RUT de alumno (a través de pago -> inscripcion -> alumno)
+     * Buscar asistencias por RUT de alumno usando SQL nativo
      */
-    @Query("SELECT a FROM Asistencia a " +
-            "WHERE a.pago.id IN (" +
-            "    SELECT p.id FROM Pago p " +
-            "    WHERE p.inscripcion.alumno.rut = :rut" +
-            ")")
+    @Query(value = "SELECT a.* FROM asistencia a " +
+            "INNER JOIN pago p ON a.id_pago = p.id_pago " +
+            "INNER JOIN inscripcion i ON p.id_inscripcion = i.id_inscripcion " +
+            "INNER JOIN alumno al ON i.id_alumno = al.id_alumno " +
+            "WHERE al.rut = :rut",
+            nativeQuery = true)
     List<Asistencia> findByAlumnoRut(@Param("rut") String rut);
 
     // ============================================================

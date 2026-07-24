@@ -61,10 +61,6 @@ public interface IInscripcionRepository extends JpaRepository<Inscripcion, Long>
      */
     List<Inscripcion> findByFechFinAfter(LocalDate fecha);
 
-    /**
-     * Buscar inscripciones activas (estado = 'activa')
-     */
-    List<Inscripcion> findByEstadoIgnoreCaseActivo(String estado);
 
     // ============================================================
     // BÚSQUEDAS POR ALUMNO

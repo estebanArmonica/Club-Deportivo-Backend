@@ -198,7 +198,7 @@ public interface ICategoriaRepository extends JpaRepository<Categoria, Long> {
      * Verifica si una categoría tiene grupos asociados
      */
     @Query("SELECT CASE WHEN COUNT(g) > 0 THEN true ELSE false END " +
-            "FROM Grupo g WHERE g.categoria.id = :categoriaId")
+            "FROM Grupo g WHERE g.cate.id = :categoriaId")
     Boolean hasGruposAsociados(@Param("categoriaId") Long categoriaId);
 
     /**

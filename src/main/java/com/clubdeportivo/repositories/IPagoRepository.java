@@ -277,7 +277,7 @@ public interface IPagoRepository extends JpaRepository<Pago, Long> {
     /**
      * Obtener pagos de la semana actual
      */
-    @Query("SELECT p FROM Pago p WHERE p.fechPago >= CURRENT_DATE - 7")
+    @Query("SELECT p FROM Pago p WHERE p.fechPago >= FUNCTION('DAY', -7, CURRENT_DATE)")
     List<Pago> findPagosDeLaSemana();
 
     /**

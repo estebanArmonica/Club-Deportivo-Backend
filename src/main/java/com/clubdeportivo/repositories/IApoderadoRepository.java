@@ -42,12 +42,19 @@ public interface IApoderadoRepository extends JpaRepository<Apoderado, Long> {
     List<Apoderado> findAllWithAlumnos();
 
     // buscamos apoderados que tienen alumnos en un grupo especifico
+    /*@Query(value = "SELECT DISTINCT ap.* FROM apoderado ap " +
+            "INNER JOIN alumno_apoderado aa ON ap.id_apoderado = aa.id_apoderado " +
+            "INNER JOIN alumno a ON aa.id_alumno = a.id_alumno " +
+            "INNER JOIN inscripcion i ON a.id_alumno = i.id_alumno " +
+            "WHERE i.id_grupo = :grupoId AND i.estado = 'activa'",
+            nativeQuery = true)
+    List<Apoderado> findApoderadosByGrupoId(@Param("grupoId") Long grupoId);*/
+
     @Query("SELECT DISTINCT ap FROM Apoderado ap " +
-           "JOIN ap.alumnos a " +
-           "JOIN a.inscripciones i " +
-           "WHERE i.grupo.id = :grupoId " +
-           "AND i.estado = 'activa'"
-    )
+            "JOIN ap.alumnos a " +
+            "JOIN Inscripcion i ON i.alumno.id = a.id " +
+            "WHERE i.grupo.id = :grupoId " +
+            "AND i.estado = 'activa'")
     List<Apoderado> findApoderadosByGrupoId(@Param("grupoId") Long grupoId);
 
     // ========================================================================================================================================
