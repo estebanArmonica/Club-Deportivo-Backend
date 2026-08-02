@@ -90,6 +90,8 @@ public class SecurityConfig {
                     .requestMatchers("/swagger-ui/**", "/v3/api-docs/**", "/swagger-ui.html").permitAll()
                     // permisos de usuario para logueo
                     .requestMatchers("/api/v1/auth/**").permitAll()
+                    // permisos de deportes
+                    .requestMatchers("api/v1/deportes/**").permitAll()
                     // All other requests need authentication
                     .anyRequest().authenticated()
             )

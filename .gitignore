@@ -38,3 +38,7 @@ script.sql
 ### .ENV ###
 .env 
 .env.*
+
+### LOGS ###
+logs/*
+logs/dev-application.log
