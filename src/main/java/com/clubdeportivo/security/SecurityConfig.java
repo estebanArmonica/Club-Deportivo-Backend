@@ -86,14 +86,23 @@ public class SecurityConfig {
             )
             .authorizeHttpRequests(authorize -> 
                 authorize
-                    // Swagger UI endpoints
-                    .requestMatchers("/swagger-ui/**", "/v3/api-docs/**", "/swagger-ui.html").permitAll()
-                    // permisos de usuario para logueo
-                    .requestMatchers("/api/v1/auth/**").permitAll()
-                    // permisos de deportes
-                    .requestMatchers("api/v1/deportes/**").permitAll()
-                    // All other requests need authentication
-                    .anyRequest().authenticated()
+                        // Swagger UI endpoints
+                        .requestMatchers("/swagger-ui/**", "/v3/api-docs/**", "/swagger-ui.html").permitAll()
+                        // permisos de usuario para logueo
+                        .requestMatchers("/api/v1/auth/**").permitAll()
+                        // permisos de deportes
+                        .requestMatchers("/api/v1/deportes/**").permitAll()
+                        // permiso de categoria
+                         .requestMatchers("/api/v1/categorias/**").permitAll()
+                        // permisos de grupos
+                        .requestMatchers("/api/v1/grupos/**").permitAll()
+                        // permisos de sucursales
+                        .requestMatchers("/api/v1/sucursales/**").permitAll()
+                        // permisos de cancha
+                        .requestMatchers("/api/v1/cancha/**").permitAll()
+
+                        // All other requests need authentication
+                        .anyRequest().authenticated()
             )
             .addFilterBefore(sqlInjectionFilter, UsernamePasswordAuthenticationFilter.class)
             .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);

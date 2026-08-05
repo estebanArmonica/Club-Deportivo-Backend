@@ -21,9 +21,12 @@ import java.util.List;
 @RequestMapping("api/v1/grupos")
 @Tag(name = "Grupos", description = "Endpoints for grupo")
 public class GrupoController {
+    private IGrupoService grupoService;
 
     @Autowired
-    private IGrupoService grupoService;
+    public GrupoController(IGrupoService grupoService) {
+        this.grupoService = grupoService;
+    }
 
     // crud de endpoints
     @GetMapping("/list-all")
@@ -78,7 +81,7 @@ public class GrupoController {
         return ResponseEntity.ok(grupoService.findByPrecioBetween(min, max));
     }
 
-    @GetMapping("/precio")
+    @GetMapping("/cantidad")
     public ResponseEntity<List<Grupo>> getByCapacidad(@RequestParam int min, @RequestParam int max) {
         return ResponseEntity.ok(grupoService.findByCapacidadBetween(min, max));
     }
