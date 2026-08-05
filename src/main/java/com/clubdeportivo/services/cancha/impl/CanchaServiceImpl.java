@@ -18,8 +18,8 @@ import java.util.List;
 @Transactional
 @RequiredArgsConstructor
 public class CanchaServiceImpl implements ICanchaService {
-    private ICanchaRepository canchaRepository;
-    private ISucursalRepository sucursalRepository;
+    private final ICanchaRepository canchaRepository;
+    private final ISucursalRepository sucursalRepository;
 
     // Validaciones privadas
     private void validarNombre(String nombre) {

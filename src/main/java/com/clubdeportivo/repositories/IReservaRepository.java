@@ -321,4 +321,15 @@ public interface IReservaRepository extends JpaRepository<Reserva, Long> {
             "FROM Reserva r " +
             "WHERE r.equipo.id = :equipoId AND r.estado != 'cancelada'")
     Boolean hasReservasActivas(@Param("equipoId") Long equipoId);
+
+    /**
+     * Busca reserva por ID con todas sus relaciones
+     */
+    @Query("SELECT r FROM Reserva r " +
+            "LEFT JOIN FETCH r.equipo " +
+            "LEFT JOIN FETCH r.cancha c " +
+            "LEFT JOIN FETCH c.sucursal s " +
+            "LEFT JOIN FETCH s.club " +
+            "WHERE r.id = :id")
+    Optional<Reserva> findByIdWithAllRelations(@Param("id") Long id);
 }

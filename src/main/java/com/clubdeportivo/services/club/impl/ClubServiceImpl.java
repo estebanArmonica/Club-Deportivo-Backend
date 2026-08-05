@@ -18,7 +18,7 @@ import java.util.regex.Pattern;
 @Transactional
 @RequiredArgsConstructor
 public class ClubServiceImpl implements IClubService {
-    private IClubRepository clubRepo;
+    private final IClubRepository clubRepo;
 
     // validaciones privadas
     private void validarEmail(String email) {

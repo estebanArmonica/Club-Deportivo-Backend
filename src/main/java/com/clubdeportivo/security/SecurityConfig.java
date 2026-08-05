@@ -100,6 +100,12 @@ public class SecurityConfig {
                         .requestMatchers("/api/v1/sucursales/**").permitAll()
                         // permisos de cancha
                         .requestMatchers("/api/v1/cancha/**").permitAll()
+                        // permisos de equipo
+                        .requestMatchers("/api/v1/equipos/**").permitAll()
+                        // permisos de reserva
+                        .requestMatchers("/api/v1/reservas").permitAll()
+                        // permisos de inscripcion
+                        .requestMatchers("/api/v1/inscripciones/**").permitAll()
 
                         // All other requests need authentication
                         .anyRequest().authenticated()

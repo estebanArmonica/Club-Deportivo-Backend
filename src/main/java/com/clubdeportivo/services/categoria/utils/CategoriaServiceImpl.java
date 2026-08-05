@@ -19,8 +19,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CategoriaServiceImpl implements ICategoriaService {
 
-    private IDeporteRepository deporteRepo;
-    private ICategoriaRepository cateRepo;
+    private final IDeporteRepository deporteRepo;
+    private final ICategoriaRepository cateRepo;
 
     // Validaciones privadas
     private void validarRangoEdad(int edadMinima, int edadMaxima) {

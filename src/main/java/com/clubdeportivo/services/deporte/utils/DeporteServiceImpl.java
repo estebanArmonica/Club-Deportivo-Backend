@@ -18,7 +18,7 @@ import com.clubdeportivo.dtos.deporte.EstadisticasDeporteDTO;
 @RequiredArgsConstructor
 public class DeporteServiceImpl implements IDeporteService {
 
-    private IDeporteRepository deporteRepo;
+    private final IDeporteRepository deporteRepo;
 
     @Override
     public Deporte create(Deporte deporte) {

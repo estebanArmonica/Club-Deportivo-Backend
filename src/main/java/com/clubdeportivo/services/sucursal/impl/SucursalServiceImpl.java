@@ -18,8 +18,8 @@ import java.util.List;
 @Transactional
 @RequiredArgsConstructor
 public class SucursalServiceImpl implements ISucursalService {
-    private ISucursalRepository sucursalRepo;
-    private IClubRepository clubRepo;
+    private final ISucursalRepository sucursalRepo;
+    private final IClubRepository clubRepo;
 
     // Validaciones privadas
     private void validarNombre(String nombre) {

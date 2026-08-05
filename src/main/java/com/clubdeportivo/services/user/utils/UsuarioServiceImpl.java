@@ -2,6 +2,7 @@ package com.clubdeportivo.services.user.utils;
 
 import java.util.Optional;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -18,16 +19,11 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Service
 @Transactional
+@RequiredArgsConstructor
 public class UsuarioServiceImpl implements IUsuarioService {
     
     private final IUsuarioRepository usuarioRepository;
     private final PasswordEncoder passwordEncoder;
-
-    @Autowired
-    public UsuarioServiceImpl(IUsuarioRepository usuarioRepository, PasswordEncoder passwordEncoder) {
-        this.usuarioRepository = usuarioRepository;
-        this.passwordEncoder = passwordEncoder;
-    }
 
     @Override
     @Transactional

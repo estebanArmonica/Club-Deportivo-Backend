@@ -23,9 +23,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class GrupoServiceImpl implements IGrupoService {
 
-    private IGrupoRepository grupoRepo;
-    private ICategoriaRepository cateRepo;
-    private ISucursalRepository sucursalRepo;
+    private final IGrupoRepository grupoRepo;
+    private final ICategoriaRepository cateRepo;
+    private final ISucursalRepository sucursalRepo;
 
     // validaciones privadas
     private void validarHorario(LocalTime horaInicio, LocalTime horaFin) {
