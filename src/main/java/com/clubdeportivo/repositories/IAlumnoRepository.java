@@ -27,6 +27,8 @@ public interface IAlumnoRepository extends JpaRepository<Alumno, Long> {
     List<Alumno> findByActivoFalse();
     List<Alumno> findByFechInscripcionBetween(LocalDate fechaInicio, LocalDate fechaFin);
 
+    List<Alumno> findAllByOrderByNombreAsc();
+
     // Query con JOIN a Apoderado
     @Query("SELECT a FROM Alumno a JOIN a.apoderados ap WHERE ap.id = :apoderadoId")
     List<Alumno> findAlumnosByApoderadoId(@Param("apoderadoId") Long apoderadoId);
@@ -113,4 +115,14 @@ public interface IAlumnoRepository extends JpaRepository<Alumno, Long> {
             "GROUP BY a.id " +
             "ORDER BY totalAsistencias DESC")
     List<Object[]> findAlumnosConMasAsistencias();
+
+    /**
+     * Buscamos alumnos por el rango de edad
+     * Calculamos la edad a partir de la fecha de nacimiento
+     */
+    @Query("SELECT a FROM Alumno a " +
+            "WHERE EXTRACT(YEAR FROM CURRENT_DATE) - EXTRACT(YEAR FROM a.fechNacimiento) BETWEEN :edadMin AND :edadMax " +
+            "AND a.activo = true")
+    List<Alumno> findAlumnosByRangoEdad(@Param("edadMin") Integer edadMin,
+                                        @Param("edadMax") Integer edadMax);
 }

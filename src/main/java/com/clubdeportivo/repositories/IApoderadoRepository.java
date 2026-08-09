@@ -18,6 +18,7 @@ public interface IApoderadoRepository extends JpaRepository<Apoderado, Long> {
 
     // buscamos un apoderado por parentesco
     List<Apoderado> findByParentesco(String parentesco);
+    List<Apoderado> findAllByOrderByParentescoAsc();
 
     // buscamos por contacto que contenga un valor (esto es para busquedas parciales)
     List<Apoderado> findByContactoContaining(String contacto);
