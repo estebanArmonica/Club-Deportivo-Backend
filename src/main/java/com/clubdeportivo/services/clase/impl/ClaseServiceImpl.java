@@ -20,8 +20,8 @@ import java.util.List;
 @Transactional
 @RequiredArgsConstructor
 public class ClaseServiceImpl implements IClaseService {
-    private IClaseRepository claseRepository;
-    private IGrupoRepository grupoRepository;
+    private final IClaseRepository claseRepository;
+    private final IGrupoRepository grupoRepository;
 
     // Validaciones privadas
     private void validarEstado(String estado) {

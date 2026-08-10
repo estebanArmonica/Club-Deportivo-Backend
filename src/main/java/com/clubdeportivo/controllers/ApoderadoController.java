@@ -21,7 +21,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Tag(name = "Apoderados", description = "Endpoints for Apoderados")
 public class ApoderadoController {
-    private IApoderadoService apoderadoService;
+    private final IApoderadoService apoderadoService;
 
     /**
      * Crear un nuevo apoderado

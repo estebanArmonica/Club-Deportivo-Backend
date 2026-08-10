@@ -88,7 +88,7 @@ public class SecurityConfig {
                 authorize
                         // Swagger UI endpoints
                         .requestMatchers("/swagger-ui/**", "/v3/api-docs/**", "/swagger-ui.html").permitAll()
-                        // permisos de usuario para logueo
+                        // permisos de authenticaciones
                         .requestMatchers("/api/v1/auth/**").permitAll()
                         // permisos de deportes
                         .requestMatchers("/api/v1/deportes/**").permitAll()
@@ -106,6 +106,24 @@ public class SecurityConfig {
                         .requestMatchers("/api/v1/reservas").permitAll()
                         // permisos de inscripcion
                         .requestMatchers("/api/v1/inscripciones/**").permitAll()
+                        // permisos de alumnos
+                        .requestMatchers("/api/v1/alumnos/**").permitAll()
+                        // permisos de apoderado
+                        .requestMatchers("/api/v1/apoderados/**").permitAll()
+                        // permisos de asistencia
+                        .requestMatchers("/api/v1/asistencia/**").permitAll()
+                        // permisos de clases
+                        .requestMatchers("/api/v1/clases/**").permitAll()
+                        // permisos de club
+                        .requestMatchers("/api/v1/clubes/**").permitAll()
+                        // permisos de encargado sucursal
+                        .requestMatchers("/api/v1/encargado-sucursal/**").permitAll()
+                        // permisos de pagos
+                        .requestMatchers("/api/v1/pagos/**").permitAll()
+                        // permisos de profesor grupo
+                        .requestMatchers("/api/v1/profesor-grupos/**").permitAll()
+                        // permisos de usuarios
+                        .requestMatchers("/api/v1/usuarios/**").permitAll()
 
                         // All other requests need authentication
                         .anyRequest().authenticated()

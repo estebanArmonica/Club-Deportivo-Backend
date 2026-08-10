@@ -20,7 +20,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Tag(name = "Asistencias", description = "Endpoints for Asistencias")
 public class AsistenciaController {
-    private IAsistenciaService asistenciaService;
+    private final IAsistenciaService asistenciaService;
 
     // metodo GET
     @GetMapping("/list-all")

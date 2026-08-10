@@ -21,7 +21,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 @Tag(name = "Usuarios", description = "Endpoints for usuarios")
 public class UsuarioController {
-    private IUsuarioService usuarioService;
+    private final IUsuarioService usuarioService;
 
     // Metodo POST
     @PostMapping("/create-user")

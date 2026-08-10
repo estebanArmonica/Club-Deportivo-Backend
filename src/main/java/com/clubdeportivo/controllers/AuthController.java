@@ -9,6 +9,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -20,15 +21,10 @@ import java.util.Map;
 @Slf4j
 @RestController
 @RequestMapping("api/v1/auth")
+@RequiredArgsConstructor
 @Tag(name = "Authentication", description="Endpoints for authentication and user management")
 public class AuthController {
-
     private final IAuthService authService;
-
-    @Autowired
-    public AuthController(IAuthService authService) {
-        this.authService = authService;
-    }
 
     @PostMapping("/login")
     @Operation(

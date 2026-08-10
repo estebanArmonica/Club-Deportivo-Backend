@@ -21,7 +21,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Tag(name = "Reservas", description = "Endpoints for reservas")
 public class ReservaController {
-    private IReservaService reservaService;
+    private final IReservaService reservaService;
 
     /**
      * Crud de endpoints

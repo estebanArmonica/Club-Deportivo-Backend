@@ -19,7 +19,7 @@ import java.util.List;
 @Tag(name = "Equipos", description = "Endpoints for equipos")
 public class EquipoController {
 
-    private IEquipoService equipoService;
+    private final IEquipoService equipoService;
 
     /**
      * Logica de CRUD

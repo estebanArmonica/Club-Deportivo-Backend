@@ -3,6 +3,7 @@ package com.clubdeportivo.controllers;
 import com.clubdeportivo.dtos.grupo.EstadisticasGrupoDTO;
 import com.clubdeportivo.models.Grupo;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -19,14 +20,10 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequestMapping("api/v1/grupos")
+@RequiredArgsConstructor
 @Tag(name = "Grupos", description = "Endpoints for grupo")
 public class GrupoController {
-    private IGrupoService grupoService;
-
-    @Autowired
-    public GrupoController(IGrupoService grupoService) {
-        this.grupoService = grupoService;
-    }
+    private final IGrupoService grupoService;
 
     // crud de endpoints
     @GetMapping("/list-all")

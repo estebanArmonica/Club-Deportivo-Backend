@@ -22,8 +22,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class AlumnoServiceImpl implements IAlumnoService {
 
-    private IAlumnoRepository alumnoRepository;
-    private IApoderadoRepository apoderadoRepository;
+    private final IAlumnoRepository alumnoRepository;
+    private final IApoderadoRepository apoderadoRepository;
 
     // realizamos validaciones privadas
     private void validarRut(String rut) {

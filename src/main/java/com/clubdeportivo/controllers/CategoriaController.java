@@ -4,6 +4,7 @@ import com.clubdeportivo.dtos.categoria.EstadisticasCategoriaDTO;
 import com.clubdeportivo.models.Categoria;
 import com.clubdeportivo.services.categoria.ICategoriaService;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,11 +16,11 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequestMapping("api/v1/categorias")
+@RequiredArgsConstructor
 @Tag(name = "Categorias", description = "Endpoints for categorias")
 public class CategoriaController {
 
-    @Autowired
-    private ICategoriaService cateService;
+    private final ICategoriaService cateService;
 
     // logica de endpoints en categoria
     @GetMapping("/list-all")

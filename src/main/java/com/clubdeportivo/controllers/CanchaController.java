@@ -18,7 +18,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Tag(name = "Canchas", description = "Endpoints for Canchas")
 public class CanchaController {
-    private ICanchaService canchaService;
+    private final ICanchaService canchaService;
 
     // Metodo GET
     @GetMapping("/list-all")

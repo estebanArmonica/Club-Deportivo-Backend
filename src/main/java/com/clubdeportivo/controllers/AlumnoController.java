@@ -23,7 +23,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Tag(name = "Alumnos", description = "Endpoints for Alumnos")
 public class AlumnoController {
-    private IAlumnoService alumnoService;
+    private final IAlumnoService alumnoService;
 
     // Metodo GET
 

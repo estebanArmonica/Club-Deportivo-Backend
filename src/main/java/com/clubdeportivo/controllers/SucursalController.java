@@ -18,7 +18,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Tag(name = "Sucursales", description = "Endpoints for sucursales")
 public class SucursalController {
-    private ISucursalService sucursalService;
+    private final ISucursalService sucursalService;
 
     // Endpoints GET
     @GetMapping("/list-all")

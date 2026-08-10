@@ -21,7 +21,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Tag(name = "Clases", description = "Endpoints for clases")
 public class ClaseController {
-    private IClaseService claseService;
+    private final IClaseService claseService;
 
     // Metodo GET
     @GetMapping("/list-all")

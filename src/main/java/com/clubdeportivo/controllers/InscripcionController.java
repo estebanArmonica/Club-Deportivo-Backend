@@ -20,7 +20,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Tag(name = "Inscripciones", description = "Endpoints for inscripciones")
 public class InscripcionController {
-    private IInscripcionService inscripcionService;
+    private final IInscripcionService inscripcionService;
 
     // Metodo GET
     @GetMapping("/list-all")

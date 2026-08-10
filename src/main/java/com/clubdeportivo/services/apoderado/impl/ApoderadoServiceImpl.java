@@ -17,7 +17,7 @@ import java.util.List;
 @Transactional
 @RequiredArgsConstructor
 public class ApoderadoServiceImpl implements IApoderadoService {
-    private IApoderadoRepository apoderadoRepository;
+    private final IApoderadoRepository apoderadoRepository;
 
     // validaciones privadas
     private void validarParentesco(String parentesco) {

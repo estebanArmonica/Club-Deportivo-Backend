@@ -20,7 +20,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Tag(name = "Clubes", description = "Endpoints for clubes")
 public class ClubController {
-    private IClubService clubService;
+    private final IClubService clubService;
 
     // endpintos GET
     @GetMapping("/list-all")

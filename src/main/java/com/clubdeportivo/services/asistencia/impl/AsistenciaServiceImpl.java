@@ -23,9 +23,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class AsistenciaServiceImpl implements IAsistenciaService {
 
-    private IAsistenciaRepository asistenciaRepository;
-    private IClaseRepository claseRepository;
-    private IPagoRepository pagoRepository;
+    private final IAsistenciaRepository asistenciaRepository;
+    private final IClaseRepository claseRepository;
+    private final IPagoRepository pagoRepository;
 
     // Validaciones privadas
     private String validarHoraLlegadaConObservacion(LocalTime horaLlegada, LocalTime horaInicioClase) {
