@@ -214,7 +214,7 @@ public class AlumnoController {
     }
 
     // Metodo DELETE
-    @DeleteMapping("/delete-alumno/{id]")
+    @DeleteMapping("/delete-alumno/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         alumnoService.deleteLogical(id);
         return ResponseEntity.noContent().build();

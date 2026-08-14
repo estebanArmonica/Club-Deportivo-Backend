@@ -9,7 +9,6 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EntityListeners;
@@ -69,13 +68,13 @@ public class Usuario {
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "usuarios_roles", joinColumns = @JoinColumn(name = "usuario_id", referencedColumnName = "id_usuario")
             , inverseJoinColumns = @JoinColumn(name = "roles_id", referencedColumnName = "id_rol"))
     @Builder.Default
     private Set<Rol> roles = new HashSet<>();
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "usuarios_clubes", joinColumns = @JoinColumn(name = "usuario_id", referencedColumnName = "id_usuario")
              , inverseJoinColumns = @JoinColumn(name = "clubes_id", referencedColumnName = "id_club"))
     @Builder.Default

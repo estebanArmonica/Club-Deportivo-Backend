@@ -13,6 +13,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Optional;
 
 @Slf4j
@@ -26,6 +28,10 @@ public class UsuarioController {
     // Metodo POST
     @PostMapping("/create-user")
     public ResponseEntity<Usuario> create(@Valid @RequestBody Usuario usuario) {
+        // si no se envía createdAt, se asigna la fecha actual
+        if (usuario.getCreatedAt() == null) {
+            usuario.setCreatedAt(LocalDateTime.now());
+        }
         Usuario created = usuarioService.createUser(usuario);
         return ResponseEntity.status(HttpStatus.CREATED).body(created);
     }

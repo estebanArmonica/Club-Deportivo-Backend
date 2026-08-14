@@ -54,7 +54,7 @@ public class Alumno {
     @Column(name = "fech_inscripcion", nullable = false)
     private LocalDate fechInscripcion;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinTable(name = "alumnos_tutores", joinColumns = @JoinColumn(name = "alumno_id", referencedColumnName = "id_alumno")
             , inverseJoinColumns = @JoinColumn(name = "apoderado_id", referencedColumnName = "id_apoderado"))
     @Builder.Default

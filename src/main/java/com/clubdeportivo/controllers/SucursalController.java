@@ -77,7 +77,7 @@ public class SucursalController {
     }
 
     // Metodo PUT
-    @PutMapping("/update-sucursal/{id]")
+    @PutMapping("/update-sucursal/{id}")
     public ResponseEntity<Sucursal> update(@PathVariable Long id, @RequestBody Sucursal sucursal) {
         log.info("Buscando sucursal con el id {}", id);
         return ResponseEntity.ok(sucursalService.update(id, sucursal));
