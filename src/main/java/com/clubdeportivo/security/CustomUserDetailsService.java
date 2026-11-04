@@ -10,6 +10,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.clubdeportivo.models.Usuario;
 import com.clubdeportivo.repositories.IUsuarioRepository;
@@ -25,9 +26,10 @@ public class CustomUserDetailsService implements UserDetailsService {
     private final IUsuarioRepository userRepo;
 
     @Override
+    @Transactional(readOnly = true)
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         // buscamos por email en lugar de username
-        Usuario user = userRepo.findByEmail(email)
+        Usuario user = userRepo.findByEmailWithRoles(email)
             .orElseThrow(() -> {
                 log.warn("User not found with email: {}", email);
                 return new UsernameNotFoundException("User not found with email: " + email);

@@ -1,6 +1,5 @@
 package com.clubdeportivo.services.profesorgrupo;
 
-import java.time.LocalDate;
 import java.util.List;
 
 import com.clubdeportivo.dtos.profesorgrupo.EstadisticasProfesorGrupoDTO;

@@ -9,7 +9,6 @@ import com.clubdeportivo.models.Rol;
 import com.clubdeportivo.repositories.IClubRepository;
 import com.clubdeportivo.repositories.IRolRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.security.crypto.password.PasswordEncoder;
