@@ -451,3 +451,611 @@ Caused by: org.hibernate.query.SemanticException: Could not interpret path expre
 2026-11-04 17:53:59.030 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-11-04 17:53:59.035 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-11-04 17:53:59.041 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-11-04 20:30:00.832 [main] INFO  c.c.ClubesDeportivosApiApplication - Starting ClubesDeportivosApiApplication using Java 17.0.19 with PID 9796 (/home/armonica/Desktop/Archivos/Proyectos SpringBoot/Club-Deportivo-/Club-Deportivo-Backend/target/classes started by armonica in /home/armonica/Desktop/Archivos/Proyectos SpringBoot/Club-Deportivo-/Club-Deportivo-Backend)
+2026-11-04 20:30:00.836 [main] INFO  c.c.ClubesDeportivosApiApplication - The following 1 profile is active: "dev"
+2026-11-04 20:30:02.049 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-04 20:30:02.180 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 116 ms. Found 19 JPA repository interfaces.
+2026-11-04 20:30:02.972 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2026-11-04 20:30:03.002 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-04 20:30:03.002 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-11-04 20:30:03.067 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2158 ms
+2026-11-04 20:30:03.314 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-04 20:30:03.431 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-11-04 20:30:04.063 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-04 20:30:04.111 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-11-04 20:30:04.241 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ebe903a
+2026-11-04 20:30:04.321 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-11-04 20:30:04.399 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/club_deportivo]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.6
+	Default catalog/schema: club_deportivo/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-04 20:30:05.923 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-04 20:30:05.935 [main] INFO  org.hibernate.orm.jdbc.batch - HHH100501: Automatic JDBC statement batching enabled (maximum batch size 25)
+2026-11-04 20:30:06.039 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-04 20:30:06.152 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-04 20:30:07.034 [main] INFO  c.c.c.GarbageCollectorMonitoringConfig - ✅ Monitoreo de Garbage Collector registrado
+2026-11-04 20:30:07.238 [Notification Thread] DEBUG c.c.c.GarbageCollectorMonitoringConfig - 📊 GC: G1 Young Generation - Duración: 11ms, Acción: end of minor GC
+2026-11-04 20:30:07.324 [Notification Thread] DEBUG c.c.c.GarbageCollectorMonitoringConfig - 📊 GC: G1 Young Generation - Duración: 8ms, Acción: end of minor GC
+2026-11-04 20:30:07.446 [Notification Thread] DEBUG c.c.c.GarbageCollectorMonitoringConfig - 📊 GC: G1 Young Generation - Duración: 4ms, Acción: end of minor GC
+2026-11-04 20:30:07.656 [Notification Thread] DEBUG c.c.c.GarbageCollectorMonitoringConfig - 📊 GC: G1 Young Generation - Duración: 5ms, Acción: end of minor GC
+2026-11-04 20:30:07.948 [Notification Thread] DEBUG c.c.c.GarbageCollectorMonitoringConfig - 📊 GC: G1 Young Generation - Duración: 9ms, Acción: end of minor GC
+2026-11-04 20:30:08.192 [Notification Thread] DEBUG c.c.c.GarbageCollectorMonitoringConfig - 📊 GC: G1 Young Generation - Duración: 20ms, Acción: end of minor GC
+2026-11-04 20:30:08.387 [Notification Thread] DEBUG c.c.c.GarbageCollectorMonitoringConfig - 📊 GC: G1 Young Generation - Duración: 14ms, Acción: end of minor GC
+2026-11-04 20:30:08.722 [Notification Thread] DEBUG c.c.c.GarbageCollectorMonitoringConfig - 📊 GC: G1 Young Generation - Duración: 10ms, Acción: end of minor GC
+2026-11-04 20:30:08.744 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-11-04 20:30:09.394 [Notification Thread] DEBUG c.c.c.GarbageCollectorMonitoringConfig - 📊 GC: G1 Young Generation - Duración: 12ms, Acción: end of minor GC
+2026-11-04 20:30:09.947 [Notification Thread] DEBUG c.c.c.GarbageCollectorMonitoringConfig - 📊 GC: G1 Young Generation - Duración: 15ms, Acción: end of minor GC
+2026-11-04 20:30:10.213 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-04 20:30:10.640 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-11-04 20:30:11.009 [Notification Thread] DEBUG c.c.c.GarbageCollectorMonitoringConfig - 📊 GC: G1 Young Generation - Duración: 19ms, Acción: end of minor GC
+2026-11-04 20:30:11.271 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2026-11-04 20:30:11.282 [main] INFO  c.c.ClubesDeportivosApiApplication - Started ClubesDeportivosApiApplication in 11.076 seconds (process running for 11.587)
+2026-11-04 20:30:11.286 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:30:11.286 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:30:11.286 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 101MB / 1910MB usado (5%)
+2026-11-04 20:30:40.736 [http-nio-8083-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-04 20:30:40.737 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-04 20:30:40.740 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-11-04 20:30:40.904 [http-nio-8083-exec-3] INFO  c.c.controllers.AuthController - Login request for user: user@encargado.cl
+2026-11-04 20:30:41.858 [http-nio-8083-exec-3] INFO  c.c.s.auth.utils.AuthServiceImpl - User logged in successfully: user@encargado.cl
+2026-11-04 20:31:11.287 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:31:11.288 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:31:11.288 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 139MB / 1910MB usado (7%)
+2026-11-04 20:32:11.289 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:32:11.289 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:32:11.289 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 139MB / 1910MB usado (7%)
+2026-11-04 20:33:11.290 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:33:11.290 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:33:11.290 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 139MB / 1910MB usado (7%)
+2026-11-04 20:34:11.291 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:34:11.292 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:34:11.293 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 139MB / 1910MB usado (7%)
+2026-11-04 20:35:11.295 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:35:11.296 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:35:11.296 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 139MB / 1910MB usado (7%)
+2026-11-04 20:36:11.309 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:36:11.310 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:36:11.311 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 139MB / 1910MB usado (7%)
+2026-11-04 20:37:11.312 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:37:11.312 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:37:11.312 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 139MB / 1910MB usado (7%)
+2026-11-04 20:38:11.313 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:38:11.313 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:38:11.313 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 140MB / 1910MB usado (7%)
+2026-11-04 20:39:11.314 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:39:11.315 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:39:11.316 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 140MB / 1910MB usado (7%)
+2026-11-04 20:40:11.317 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:40:11.317 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:40:11.318 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 141MB / 1910MB usado (7%)
+2026-11-04 20:41:11.319 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:41:11.319 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:41:11.320 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 144MB / 1910MB usado (7%)
+2026-11-04 20:42:11.320 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:42:11.321 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:42:11.322 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 146MB / 1910MB usado (7%)
+2026-11-04 20:43:11.323 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:43:11.323 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:43:11.324 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 147MB / 1910MB usado (7%)
+2026-11-04 20:44:11.325 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:44:11.325 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:44:11.325 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 147MB / 1910MB usado (7%)
+2026-11-04 20:45:11.326 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:45:11.327 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:45:11.327 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 147MB / 1910MB usado (7%)
+2026-11-04 20:46:11.327 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:46:11.328 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:46:11.328 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 149MB / 1910MB usado (7%)
+2026-11-04 20:47:11.329 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:47:11.330 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:47:11.330 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 149MB / 1910MB usado (7%)
+2026-11-04 20:48:11.331 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:48:11.332 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:48:11.332 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 149MB / 1910MB usado (7%)
+2026-11-04 20:49:11.333 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:49:11.333 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:49:11.334 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 149MB / 1910MB usado (7%)
+2026-11-04 20:50:11.335 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:50:11.335 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:50:11.336 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 150MB / 1910MB usado (7%)
+2026-11-04 20:51:11.336 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:51:11.337 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:51:11.337 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 150MB / 1910MB usado (7%)
+2026-11-04 20:52:11.338 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:52:11.339 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:52:11.339 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 150MB / 1910MB usado (7%)
+2026-11-04 20:53:11.340 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:53:11.340 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:53:11.341 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 150MB / 1910MB usado (7%)
+2026-11-04 20:54:11.341 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:54:11.342 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:54:11.342 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 150MB / 1910MB usado (7%)
+2026-11-04 20:55:11.343 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:55:11.344 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:55:11.344 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 151MB / 1910MB usado (7%)
+2026-11-04 20:56:11.345 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:56:11.346 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:56:11.346 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 151MB / 1910MB usado (7%)
+2026-11-04 20:57:11.346 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:57:11.347 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:57:11.347 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 151MB / 1910MB usado (7%)
+2026-11-04 20:58:11.348 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:58:11.349 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:58:11.349 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 151MB / 1910MB usado (7%)
+2026-11-04 20:59:11.350 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 20:59:11.351 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 20:59:11.351 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 151MB / 1910MB usado (7%)
+2026-11-04 21:00:11.352 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:00:11.352 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:00:11.353 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 152MB / 1910MB usado (7%)
+2026-11-04 21:01:11.353 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:01:11.354 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:01:11.354 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 152MB / 1910MB usado (7%)
+2026-11-04 21:02:11.355 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:02:11.356 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:02:11.356 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 154MB / 1910MB usado (8%)
+2026-11-04 21:03:11.357 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:03:11.357 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:03:11.357 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 154MB / 1910MB usado (8%)
+2026-11-04 21:04:11.358 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:04:11.359 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:04:11.359 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 155MB / 1910MB usado (8%)
+2026-11-04 21:05:11.359 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:05:11.360 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:05:11.360 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 155MB / 1910MB usado (8%)
+2026-11-04 21:06:11.361 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:06:11.361 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:06:11.361 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 155MB / 1910MB usado (8%)
+2026-11-04 21:07:11.362 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:07:11.363 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:07:11.363 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 155MB / 1910MB usado (8%)
+2026-11-04 21:08:11.363 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:08:11.363 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:08:11.363 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 156MB / 1910MB usado (8%)
+2026-11-04 21:09:11.364 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:09:11.364 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:09:11.365 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 158MB / 1910MB usado (8%)
+2026-11-04 21:10:11.365 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:10:11.366 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:10:11.366 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 158MB / 1910MB usado (8%)
+2026-11-04 21:11:11.367 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:11:11.367 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:11:11.367 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 158MB / 1910MB usado (8%)
+2026-11-04 21:12:11.368 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:12:11.368 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:12:11.368 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 158MB / 1910MB usado (8%)
+2026-11-04 21:13:11.368 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:13:11.368 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:13:11.369 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 158MB / 1910MB usado (8%)
+2026-11-04 21:14:11.369 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:14:11.370 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:14:11.371 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 159MB / 1910MB usado (8%)
+2026-11-04 21:15:11.371 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:15:11.372 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:15:11.372 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 159MB / 1910MB usado (8%)
+2026-11-04 21:16:11.373 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:16:11.373 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:16:11.373 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 160MB / 1910MB usado (8%)
+2026-11-04 21:17:11.374 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:17:11.374 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:17:11.375 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 163MB / 1910MB usado (8%)
+2026-11-04 21:18:11.375 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:18:11.376 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:18:11.376 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 165MB / 1910MB usado (8%)
+2026-11-04 21:19:11.376 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:19:11.377 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:19:11.377 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 166MB / 1910MB usado (8%)
+2026-11-04 21:20:11.377 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:20:11.378 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:20:11.378 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 168MB / 1910MB usado (8%)
+2026-11-04 21:21:11.379 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:21:11.380 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:21:11.380 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 171MB / 1910MB usado (8%)
+2026-11-04 21:22:11.380 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:22:11.381 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:22:11.381 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 171MB / 1910MB usado (8%)
+2026-11-04 21:23:11.382 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:23:11.382 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:23:11.382 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 171MB / 1910MB usado (8%)
+2026-11-04 21:24:11.383 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:24:11.383 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:24:11.383 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 171MB / 1910MB usado (8%)
+2026-11-04 21:25:11.384 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:25:11.384 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:25:11.384 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 171MB / 1910MB usado (8%)
+2026-11-04 21:26:11.384 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:26:11.385 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:26:11.385 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 171MB / 1910MB usado (8%)
+2026-11-04 21:27:11.385 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:27:11.386 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:27:11.386 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 173MB / 1910MB usado (9%)
+2026-11-04 21:28:11.387 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:28:11.387 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:28:11.387 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 173MB / 1910MB usado (9%)
+2026-11-04 21:29:11.388 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:29:11.388 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:29:11.388 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 173MB / 1910MB usado (9%)
+2026-11-04 21:30:11.389 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:30:11.389 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:30:11.389 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 173MB / 1910MB usado (9%)
+2026-11-04 21:31:11.390 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:31:11.390 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:31:11.391 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 173MB / 1910MB usado (9%)
+2026-11-04 21:32:11.391 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:32:11.391 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:32:11.391 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 173MB / 1910MB usado (9%)
+2026-11-04 21:33:11.392 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:33:11.392 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:33:11.393 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 173MB / 1910MB usado (9%)
+2026-11-04 21:34:11.393 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:34:11.394 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:34:11.394 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 173MB / 1910MB usado (9%)
+2026-11-04 21:35:11.394 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:35:11.395 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:35:11.395 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 174MB / 1910MB usado (9%)
+2026-11-04 21:36:11.395 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:36:11.396 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:36:11.396 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 175MB / 1910MB usado (9%)
+2026-11-04 21:37:11.396 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:37:11.397 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:37:11.397 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 175MB / 1910MB usado (9%)
+2026-11-04 21:38:11.397 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:38:11.398 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:38:11.398 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 175MB / 1910MB usado (9%)
+2026-11-04 21:39:11.398 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:39:11.399 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:39:11.399 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 175MB / 1910MB usado (9%)
+2026-11-04 21:40:11.399 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:40:11.400 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:40:11.400 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 175MB / 1910MB usado (9%)
+2026-11-04 21:41:11.400 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:41:11.401 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:41:11.401 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 175MB / 1910MB usado (9%)
+2026-11-04 21:42:11.402 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:42:11.402 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:42:11.402 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 175MB / 1910MB usado (9%)
+2026-11-04 21:43:11.403 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:43:11.403 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:43:11.403 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 176MB / 1910MB usado (9%)
+2026-11-04 21:44:11.404 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:44:11.404 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:44:11.404 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 176MB / 1910MB usado (9%)
+2026-11-04 21:45:11.405 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:45:11.405 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:45:11.405 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 176MB / 1910MB usado (9%)
+2026-11-04 21:46:11.406 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:46:11.406 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:46:11.406 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 177MB / 1910MB usado (9%)
+2026-11-04 21:47:11.407 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:47:11.407 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:47:11.407 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 177MB / 1910MB usado (9%)
+2026-11-04 21:48:11.408 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:48:11.408 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:48:11.408 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 177MB / 1910MB usado (9%)
+2026-11-04 21:49:11.408 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:49:11.409 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:49:11.409 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 177MB / 1910MB usado (9%)
+2026-11-04 21:50:11.410 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:50:11.410 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:50:11.410 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 177MB / 1910MB usado (9%)
+2026-11-04 21:51:11.410 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:51:11.411 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:51:11.411 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 177MB / 1910MB usado (9%)
+2026-11-04 21:52:11.411 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:52:11.412 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:52:11.412 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 178MB / 1910MB usado (9%)
+2026-11-04 21:53:11.412 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:53:11.413 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:53:11.413 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 178MB / 1910MB usado (9%)
+2026-11-04 21:54:11.414 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:54:11.414 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:54:11.414 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 179MB / 1910MB usado (9%)
+2026-11-04 21:55:11.415 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:55:11.415 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:55:11.415 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 179MB / 1910MB usado (9%)
+2026-11-04 21:56:11.415 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:56:11.416 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:56:11.416 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 179MB / 1910MB usado (9%)
+2026-11-04 21:57:11.416 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:57:11.417 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:57:11.417 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 179MB / 1910MB usado (9%)
+2026-11-04 21:58:11.418 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:58:11.418 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:58:11.418 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 179MB / 1910MB usado (9%)
+2026-11-04 21:59:11.419 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 21:59:11.419 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 21:59:11.419 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 179MB / 1910MB usado (9%)
+2026-11-04 22:00:11.420 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:00:11.420 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:00:11.420 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 179MB / 1910MB usado (9%)
+2026-11-04 22:01:11.420 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:01:11.421 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:01:11.421 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 179MB / 1910MB usado (9%)
+2026-11-04 22:02:11.421 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:02:11.422 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:02:11.422 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 181MB / 1910MB usado (9%)
+2026-11-04 22:03:11.422 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:03:11.423 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:03:11.423 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 181MB / 1910MB usado (9%)
+2026-11-04 22:04:11.423 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:04:11.424 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:04:11.424 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 181MB / 1910MB usado (9%)
+2026-11-04 22:05:11.424 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:05:11.425 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:05:11.425 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 181MB / 1910MB usado (9%)
+2026-11-04 22:06:11.425 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:06:11.426 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:06:11.426 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 181MB / 1910MB usado (9%)
+2026-11-04 22:07:11.427 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:07:11.427 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:07:11.427 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 181MB / 1910MB usado (9%)
+2026-11-04 22:08:11.428 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:08:11.428 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:08:11.428 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 181MB / 1910MB usado (9%)
+2026-11-04 22:09:11.429 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:09:11.429 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:09:11.430 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 182MB / 1910MB usado (9%)
+2026-11-04 22:10:11.430 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:10:11.430 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:10:11.431 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 182MB / 1910MB usado (9%)
+2026-11-04 22:11:11.431 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:11:11.431 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:11:11.432 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 182MB / 1910MB usado (9%)
+2026-11-04 22:12:11.432 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:12:11.432 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:12:11.433 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 183MB / 1910MB usado (9%)
+2026-11-04 22:13:11.433 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:13:11.433 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:13:11.433 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 183MB / 1910MB usado (9%)
+2026-11-04 22:14:11.434 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:14:11.434 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:14:11.434 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 183MB / 1910MB usado (9%)
+2026-11-04 22:15:11.435 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:15:11.435 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:15:11.435 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 183MB / 1910MB usado (9%)
+2026-11-04 22:16:11.436 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:16:11.436 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:16:11.436 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 183MB / 1910MB usado (9%)
+2026-11-04 22:17:11.437 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:17:11.437 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:17:11.437 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 183MB / 1910MB usado (9%)
+2026-11-04 22:18:11.438 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:18:11.438 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:18:11.438 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 184MB / 1910MB usado (9%)
+2026-11-04 22:19:11.439 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:19:11.439 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:19:11.439 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 186MB / 1910MB usado (9%)
+2026-11-04 22:20:11.441 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:20:11.441 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:20:11.441 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 186MB / 1910MB usado (9%)
+2026-11-04 22:21:11.442 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:21:11.442 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:21:11.442 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 186MB / 1910MB usado (9%)
+2026-11-04 22:22:11.442 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:22:11.443 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:22:11.443 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 186MB / 1910MB usado (9%)
+2026-11-04 22:23:11.443 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:23:11.443 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:23:11.444 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 186MB / 1910MB usado (9%)
+2026-11-04 22:24:11.444 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:24:11.444 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:24:11.444 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 187MB / 1910MB usado (9%)
+2026-11-04 22:25:11.445 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:25:11.445 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:25:11.446 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 188MB / 1910MB usado (9%)
+2026-11-04 22:26:11.446 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:26:11.446 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:26:11.446 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 188MB / 1910MB usado (9%)
+2026-11-04 22:27:11.447 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:27:11.447 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:27:11.447 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 188MB / 1910MB usado (9%)
+2026-11-04 22:28:11.448 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:28:11.448 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:28:11.448 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 189MB / 1910MB usado (9%)
+2026-11-04 22:29:11.449 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:29:11.449 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:29:11.449 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 190MB / 1910MB usado (9%)
+2026-11-04 22:30:11.450 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:30:11.450 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:30:11.450 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 190MB / 1910MB usado (9%)
+2026-11-04 22:31:11.451 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:31:11.451 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:31:11.451 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 190MB / 1910MB usado (9%)
+2026-11-04 22:32:11.451 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:32:11.454 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:32:11.454 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 190MB / 1910MB usado (9%)
+2026-11-04 22:33:11.455 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:33:11.455 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:33:11.456 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 190MB / 1910MB usado (9%)
+2026-11-04 22:34:11.456 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:34:11.456 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:34:11.457 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 191MB / 1910MB usado (10%)
+2026-11-04 22:35:11.457 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:35:11.457 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:35:11.458 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 191MB / 1910MB usado (10%)
+2026-11-04 22:36:11.458 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:36:11.458 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:36:11.459 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 191MB / 1910MB usado (10%)
+2026-11-04 22:37:11.459 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:37:11.460 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:37:11.460 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 192MB / 1910MB usado (10%)
+2026-11-04 22:38:11.461 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:38:11.461 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:38:11.461 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 192MB / 1910MB usado (10%)
+2026-11-04 22:39:11.462 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:39:11.462 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:39:11.462 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 193MB / 1910MB usado (10%)
+2026-11-04 22:40:11.462 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:40:11.462 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:40:11.462 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 193MB / 1910MB usado (10%)
+2026-11-04 22:41:11.463 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:41:11.463 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:41:11.463 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 193MB / 1910MB usado (10%)
+2026-11-04 22:42:11.464 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:42:11.464 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:42:11.464 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 193MB / 1910MB usado (10%)
+2026-11-04 22:43:11.464 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:43:11.465 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:43:11.465 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 193MB / 1910MB usado (10%)
+2026-11-04 22:44:11.465 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:44:11.465 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:44:11.465 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 193MB / 1910MB usado (10%)
+2026-11-04 22:45:11.466 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:45:11.466 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:45:11.466 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 193MB / 1910MB usado (10%)
+2026-11-04 22:46:11.466 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:46:11.467 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:46:11.467 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 193MB / 1910MB usado (10%)
+2026-11-04 22:47:11.467 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:47:11.468 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:47:11.468 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 195MB / 1910MB usado (10%)
+2026-11-04 22:48:11.468 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:48:11.468 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:48:11.468 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 195MB / 1910MB usado (10%)
+2026-11-04 22:49:11.469 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:49:11.469 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:49:11.469 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 195MB / 1910MB usado (10%)
+2026-11-04 22:50:11.470 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:50:11.470 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:50:11.470 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 195MB / 1910MB usado (10%)
+2026-11-04 22:51:11.470 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:51:11.471 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:51:11.471 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 195MB / 1910MB usado (10%)
+2026-11-04 22:52:11.471 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:52:11.471 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:52:11.471 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 195MB / 1910MB usado (10%)
+2026-11-04 22:53:11.472 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:53:11.472 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 11 colecciones, tiempo total: 127ms, promedio: 11ms
+2026-11-04 22:53:11.472 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 195MB / 1910MB usado (10%)
+2026-11-04 22:53:42.099 [Notification Thread] DEBUG c.c.c.GarbageCollectorMonitoringConfig - 📊 GC: G1 Young Generation - Duración: 46ms, Acción: end of minor GC
+2026-11-04 22:54:11.473 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:54:11.473 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 22:54:11.473 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 85MB / 1910MB usado (4%)
+2026-11-04 22:55:11.474 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:55:11.474 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 22:55:11.474 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 86MB / 1910MB usado (4%)
+2026-11-04 22:56:11.475 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:56:11.475 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 22:56:11.475 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 87MB / 1910MB usado (4%)
+2026-11-04 22:57:11.475 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:57:11.476 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 22:57:11.476 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 89MB / 1910MB usado (4%)
+2026-11-04 22:58:11.476 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:58:11.476 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 22:58:11.477 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 89MB / 1910MB usado (4%)
+2026-11-04 22:59:11.477 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 22:59:11.477 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 22:59:11.477 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 89MB / 1910MB usado (4%)
+2026-11-04 23:00:11.478 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:00:11.478 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:00:11.478 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 89MB / 1910MB usado (4%)
+2026-11-04 23:01:11.478 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:01:11.479 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:01:11.479 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 90MB / 1910MB usado (4%)
+2026-11-04 23:02:11.479 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:02:11.480 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:02:11.480 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 90MB / 1910MB usado (4%)
+2026-11-04 23:03:11.480 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:03:11.481 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:03:11.481 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 90MB / 1910MB usado (4%)
+2026-11-04 23:04:11.481 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:04:11.481 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:04:11.481 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 90MB / 1910MB usado (4%)
+2026-11-04 23:05:11.481 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:05:11.482 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:05:11.482 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 91MB / 1910MB usado (4%)
+2026-11-04 23:06:11.482 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:06:11.482 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:06:11.482 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 91MB / 1910MB usado (4%)
+2026-11-04 23:07:11.483 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:07:11.483 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:07:11.483 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 92MB / 1910MB usado (4%)
+2026-11-04 23:08:11.484 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:08:11.484 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:08:11.484 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 92MB / 1910MB usado (4%)
+2026-11-04 23:09:11.484 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:09:11.485 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:09:11.485 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 92MB / 1910MB usado (4%)
+2026-11-04 23:10:11.486 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:10:11.486 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:10:11.487 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 92MB / 1910MB usado (4%)
+2026-11-04 23:11:06.930 [http-nio-8083-exec-8] INFO  c.c.s.user.utils.UsuarioServiceImpl - User updated successfully with id: 2
+2026-11-04 23:11:08.382 [http-nio-8083-exec-10] INFO  c.c.s.user.utils.UsuarioServiceImpl - User updated successfully with id: 2
+2026-11-04 23:11:11.487 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:11:11.487 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:11:11.487 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 94MB / 1910MB usado (4%)
+2026-11-04 23:12:11.488 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:12:11.488 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:12:11.488 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 94MB / 1910MB usado (4%)
+2026-11-04 23:13:11.488 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:13:11.488 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:13:11.488 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 94MB / 1910MB usado (4%)
+2026-11-04 23:14:11.489 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:14:11.489 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:14:11.489 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 94MB / 1910MB usado (4%)
+2026-11-04 23:15:11.490 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:15:11.490 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:15:11.490 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 95MB / 1910MB usado (4%)
+2026-11-04 23:16:11.490 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:16:11.490 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:16:11.491 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 95MB / 1910MB usado (4%)
+2026-11-04 23:17:11.491 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:17:11.491 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:17:11.491 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 97MB / 1910MB usado (5%)
+2026-11-04 23:17:29.240 [http-nio-8083-exec-6] INFO  c.c.controllers.GrupoController - Listamos todos los grupos disponibles
+2026-11-04 23:17:29.242 [http-nio-8083-exec-1] INFO  c.c.controllers.GrupoController - Listamos todos los grupos disponibles
+2026-11-04 23:18:11.492 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:18:11.492 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:18:11.492 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 101MB / 1910MB usado (5%)
+2026-11-04 23:19:11.492 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:19:11.493 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:19:11.493 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 101MB / 1910MB usado (5%)
+2026-11-04 23:20:11.493 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:20:11.494 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:20:11.494 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 101MB / 1910MB usado (5%)
+2026-11-04 23:21:11.495 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:21:11.495 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:21:11.495 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 101MB / 1910MB usado (5%)
+2026-11-04 23:22:11.495 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:22:11.495 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:22:11.496 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 101MB / 1910MB usado (5%)
+2026-11-04 23:23:11.496 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:23:11.496 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:23:11.496 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 102MB / 1910MB usado (5%)
+2026-11-04 23:24:11.497 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:24:11.497 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:24:11.497 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 102MB / 1910MB usado (5%)
+2026-11-04 23:25:11.497 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:25:11.497 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:25:11.497 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 102MB / 1910MB usado (5%)
+2026-11-04 23:26:11.498 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:26:11.498 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:26:11.498 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 103MB / 1910MB usado (5%)
+2026-11-04 23:27:11.499 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:27:11.499 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:27:11.499 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 103MB / 1910MB usado (5%)
+2026-11-04 23:28:11.499 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:28:11.499 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:28:11.499 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 103MB / 1910MB usado (5%)
+2026-11-04 23:29:11.500 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:29:11.500 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:29:11.500 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 103MB / 1910MB usado (5%)
+2026-11-04 23:30:11.500 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:30:11.500 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:30:11.501 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 103MB / 1910MB usado (5%)
+2026-11-04 23:31:11.501 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 📊 Estadísticas de Garbage Collector:
+2026-11-04 23:31:11.501 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig -    -G1 Young Generation: 12 colecciones, tiempo total: 173ms, promedio: 14ms
+2026-11-04 23:31:11.501 [scheduling-1] INFO  c.c.c.GarbageCollectorMonitoringConfig - 💾 Memoria actual: 103MB / 1910MB usado (5%)
+2026-11-04 23:31:11.730 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-04 23:31:11.732 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-11-04 23:31:11.739 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-04 23:31:11.741 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-11-04 23:31:11.744 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
