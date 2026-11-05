@@ -3,6 +3,7 @@ package com.clubdeportivo.services.profesorgrupo;
 import java.util.List;
 
 import com.clubdeportivo.dtos.profesorgrupo.EstadisticasProfesorGrupoDTO;
+import com.clubdeportivo.dtos.profesorgrupo.GrupoResumenProfesorDTO;
 import com.clubdeportivo.models.ProfesorGrupo;
 public interface IProfesorGrupoService {
 
@@ -145,4 +146,7 @@ public interface IProfesorGrupoService {
      * Obtener estadísticas de asignaciones
      */
     EstadisticasProfesorGrupoDTO getEstadisticas();
+
+
+    List<GrupoResumenProfesorDTO> getDashboardByProfesor(Long usuarioId);
 }

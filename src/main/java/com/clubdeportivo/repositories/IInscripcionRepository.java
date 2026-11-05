@@ -407,4 +407,10 @@ public interface IInscripcionRepository extends JpaRepository<Inscripcion, Long>
             "WHERE i.estado = :estado " +
             "ORDER BY i.fechInscripcion DESC")
     List<Object[]> findReporteByEstado(@Param("estado") String estado);
+
+    /**
+      * Obtenemos un conteo de los alumnos inscritos por grupo 
+    */
+    @Query("SELECT COUNT(i) FROM Inscripcion i WHERE i.grupo.id = :grupoId AND i.estado = 'ACTIVA'")
+    Long countAlumnosActivosByGrupo(@Param("grupoId") Long grupoId);
 }

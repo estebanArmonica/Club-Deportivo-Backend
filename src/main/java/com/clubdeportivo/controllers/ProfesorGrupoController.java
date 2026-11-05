@@ -1,6 +1,7 @@
 package com.clubdeportivo.controllers;
 
 import com.clubdeportivo.dtos.profesorgrupo.EstadisticasProfesorGrupoDTO;
+import com.clubdeportivo.dtos.profesorgrupo.GrupoResumenProfesorDTO;
 import com.clubdeportivo.models.ProfesorGrupo;
 import com.clubdeportivo.services.profesorgrupo.IProfesorGrupoService;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -103,6 +104,17 @@ public class ProfesorGrupoController {
     @GetMapping("/club/{clubId}")
     public ResponseEntity<List<ProfesorGrupo>> getByClub(@PathVariable Long clubId) {
         return ResponseEntity.ok(profesorGrupoService.findActivosByClub(clubId));
+    }
+
+    /**
+     * Realizamos un resumen de los usuarios inscritos y activos para el profesor de 
+     * cada uno de los grupos correspondientes que tenga.
+     * @param usuarioId -> ID de los usuarios o del usuario de el 
+     * @return -> retorna un conteo de todos los usuarios activos.
+    */
+    @GetMapping("/dashboard/{usuarioId}")
+    public ResponseEntity<List<GrupoResumenProfesorDTO>> getResumen(@PathVariable Long usuarioId) {
+        return ResponseEntity.ok(profesorGrupoService.getDashboardByProfesor(usuarioId));
     }
 
     /**

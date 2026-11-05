@@ -1,12 +1,15 @@
 package com.clubdeportivo.services.profesorgrupo.impl;
 
 import com.clubdeportivo.dtos.profesorgrupo.EstadisticasProfesorGrupoDTO;
+import com.clubdeportivo.dtos.profesorgrupo.GrupoResumenProfesorDTO;
 import com.clubdeportivo.models.Grupo;
 import com.clubdeportivo.models.ProfesorGrupo;
 import com.clubdeportivo.models.Usuario;
 import com.clubdeportivo.repositories.IGrupoRepository;
 import com.clubdeportivo.repositories.IProfesorGrupoRepository;
 import com.clubdeportivo.repositories.IUsuarioRepository;
+import com.clubdeportivo.repositories.IInscripcionRepository;
+
 import com.clubdeportivo.services.profesorgrupo.IProfesorGrupoService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -15,6 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -24,6 +28,7 @@ public class ProfesorGrupoServiceImpl implements IProfesorGrupoService {
     private final IProfesorGrupoRepository profesorGrupoRepository;
     private final IUsuarioRepository usuarioRepository;
     private final IGrupoRepository grupoRepository;
+    private final IInscripcionRepository inscripcionRepository;
 
     /**
      * Validaciones privadas
@@ -289,5 +294,24 @@ public class ProfesorGrupoServiceImpl implements IProfesorGrupoService {
                 .asignacionesPorSucursal(profesorGrupoRepository.countRegistrosBySucursal())
                 .asignacionesPorMes(profesorGrupoRepository.countRegistrosByMes())
                 .build();
+    }
+
+    @Override
+    public List<GrupoResumenProfesorDTO> getDashboardByProfesor(Long usuarioId) {
+        List<ProfesorGrupo> asignaciones = profesorGrupoRepository.findActivosByUsuarioId(usuarioId);
+    
+        return asignaciones.stream().map(asig -> {
+            Long alumnos = inscripcionRepository.countAlumnosActivosByGrupo(asig.getGrupo().getId());
+
+            return GrupoResumenProfesorDTO.builder()
+                .idGrupo(asig.getGrupo().getId())
+                .nombreGrupo(asig.getGrupo().getNombre())
+                .horaInicio(asig.getGrupo().getHoraInicio().toString())
+                .horaFin(asig.getGrupo().getHoraFin().toString())
+                .diasSemana(asig.getGrupo().getDiasSemana())
+                .alumnosInscritos(alumnos)
+                .capacidadMaxima(asig.getGrupo().getCapacidadMax())
+                .build();
+        }).collect(Collectors.toList());
     }
 }
